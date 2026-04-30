@@ -44,8 +44,10 @@ button {
 }
 
 .item {
+    width: 607px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: white;
     gap: 2rem;
 }
@@ -79,17 +81,20 @@ button {
     transition: all 2s ease-in;
 }
 
+/* !section1 */
+
 .section1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .top h1 {
     width: 510px;
     height: 222px;
     font-size: 67px;
+    text-align: start;
     color: #fff;
     text-transform: capitalize;
 }
@@ -99,7 +104,7 @@ button {
     height: 105px;
     color: #fff;
     font-size: 22px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .btn3 {
@@ -111,6 +116,9 @@ button {
     border-radius: 20px;
     justify-content: center;
     background-color: #A259FF;
+    margin-top: 30px;
+    gap: 10px;
+    color: #fff;
     border: none;
     padding: 22px;
 }
@@ -124,7 +132,6 @@ button p {
     display: flex;
     color: #fff;
     align-items: center;
-    justify-content: center;
     margin-top: 40px;
 }
 
@@ -177,7 +184,7 @@ p {
 /* !Section2 */
 
 .section2 {
-    margin-top: 50px;
+    margin-top: 170px;
 }
 
 
@@ -198,6 +205,7 @@ p {
 
 .textga p {
     font-size: 22px;
+    margin-top: 10px;
     color: #fff;
     display: flex;
 }
@@ -205,6 +213,7 @@ p {
 .rasmga2 {
     display: flex;
     justify-content: space-between;
+    margin-top: 60px;
 }
 
 .rasmlar {
@@ -255,7 +264,7 @@ p {
 
 
 .section3 {
-    margin-top: 50px;
+    margin-top: 170px;
 }
 
 .fasad {
@@ -270,6 +279,9 @@ p {
     height: 60px;
     border: 2px solid #A259FF;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
     color: #fff;
     font-size: 20px;
 }
@@ -279,15 +291,20 @@ p {
     height: 60px;
     background-color: transparent;
     border: 2px solid #A259FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
     font-size: 20px;
     color: #fff;
 }
 
 .top-hammasi {
-    margin-top: 20px;
+    width: 100%;
+    height: 774px;
+    margin-top: 60px;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 25px;
+    gap: 7rem;
 }
 
 .dsplay-none {
@@ -305,22 +322,35 @@ p {
     align-items: center;
     color: #fff;
     cursor: pointer;
-    padding: 20px;
+    padding: 30px;
+    padding-left: 40px;
 }
 
-.divbek p {
+.divbek-child>p {
     font-size: 16px;
 }
 
-.divbek p:nth-child(1) {
+.divbek-child {
+    width: 200px;
+    height: 22px;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+.total {
+    color: #a1a1a1;
+    font-size: 16px;
+}
+
+.divbek>p {
     font-size: 22px;
 }
 
 /* !section4 */
 
-
 .section4 {
-    margin-top: 50px;
+    margin-top: 170px;
 }
 
 .h1-yozuv {
@@ -329,8 +359,11 @@ p {
 }
 
 .top-hamma {
+    width: 100%;
     display: grid;
+    margin-top: 60px;
     grid-template-columns: auto auto auto auto;
+    gap: 90px;
 }
 
 .divhon {
@@ -352,11 +385,11 @@ p {
     height: 76px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    padding: 20px;
     background-color: #3b3b3b;
 }
 
 .pargraf {
-    text-align: center;
     color: #fff;
     font-size: 22px;
 }
@@ -364,13 +397,20 @@ p {
 /* !section5 */
 
 .section5 {
-    margin-top: 50px;
+    margin-top: 170px;
+    
+}
+
+.bosi>h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
 }
 
 .toping {
     margin-top: 40px;
     display: flex;
     align-items: center;
+    margin-top: 60px;
     justify-content: space-between;
 }
 
@@ -383,11 +423,6 @@ p {
 .top-yozuv>p {
     color: #fff;
     font-size: 22px;
-}
-
-.icon>p {
-    color: #fff;
-    font-size: 16px;
 }
 
 .divjon-1 {
@@ -409,16 +444,22 @@ p {
 
 .yoz .va {
     font-size: 12px;
+    color: #a1a1a1;
 }
 
-.top-yozuv p {
+.top-yozuv .p {
+    color: #fff;
     font-size: 22px;
 }
 
 .icon {
     width: 270px;
     height: 24px;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
     margin-bottom: 30px;
 }
 
@@ -446,107 +487,134 @@ p {
 /* !section6 */
 
 .section6 {
-    width: 1280px;
+    width: 100%;
+    /* To'liq ekran bo'lishi uchun */
     height: 640px;
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    /* Elementlarni pastga taqash uchun */
     justify-content: center;
 }
 
 .img-ek {
-    width: 1280px;
-    height: 640px;
-    align-items: center;
-    background-image: url(./assets/logo/a6f43f9350c73503d13e1fe1a0e3277804ef1192.png);
-    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%), url(./assets/logo/a6f43f9350c73503d13e1fe1a0e3277804ef1192.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px;
+    /* Dizayndagi ichki bo'shliq */
 }
 
 .leri {
-    margin-top: 37vh;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 0;
+    /* Avvalgi 37vh ni olib tashladim */
 }
 
 .leftt {
-    width: 755px;
-    height: 220px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .box11 {
-    width: 151px;
-    height: 44px;
-    padding-top: 11px;
+    width: fit-content;
+    height: auto;
+    padding: 10px 20px;
     border-radius: 20px;
     background-color: #3b3b3b;
-    text-align: center;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     color: #fff;
-}
-
-.box11 .pa {
-    font-size: 16px;
 }
 
 .leftt h1 {
-    margin-top: 20px;
+    margin-top: 0;
     font-size: 51px;
+    font-weight: 600;
     color: #fff;
+    line-height: 1.1;
 }
 
-.leftt button {
+.leftt .btn10 {
     width: 198px;
     height: 60px;
-    margin-top: 20px;
     background-color: #fff;
-    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.leftt button:hover {
+    transform: scale(1.05);
 }
 
 .leftt button p {
     font-size: 16px;
-    color: black;
+    color: #2B2B2B;
+    font-weight: 600;
+    padding: 0;
+    /* Ortiqcha paddingni olib tashladik */
 }
 
 .rightt {
-    width: 295px;
-    height: 220px;
+    width: auto;
 }
 
 .div12 {
     width: 295px;
-    height: 144px;
-    background-color: #3b3b3b;
+    height: auto;
+    background-color: rgba(59, 59, 59, 0.5);
+    /* Shaffofroq qora */
+    backdrop-filter: blur(10px);
+    /* Orqa fonni xiralashtirish (dizayndagidek) */
     color: #fff;
-    margin-top: 76px;
     border-radius: 20px;
-    cursor: pointer;
-    padding: 20px;
-}
-
-.tol {
-    font-size: 12px;
+    padding: 30px;
 }
 
 .doct {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 0px 30px; */
+    margin-top: 10px;
+}
+
+.bosch {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .bosch p:nth-child(1) {
     font-size: 38px;
+    font-weight: 700;
+    line-height: 1;
 }
 
 .bosch p:nth-child(2) {
     font-size: 12px;
+    text-transform: capitalize;
 }
 
 /* !section7 */
 
 .section7 {
-    margin-top: 50px;
+    margin-top: 170px;
     color: #fff;
 }
 
@@ -557,6 +625,7 @@ p {
 
 .textga2 h1 {
     font-size: 38px;
+    margin-bottom: 10px;
 }
 
 .textga2 p {
@@ -567,6 +636,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 60px;
 }
 
 .divlarr {
@@ -579,25 +649,34 @@ p {
     background-color: #3b3b3b;
 }
 
+.divlar-yoz>.sas {
+    font-size: 22px;
+}
+
+.divlar-yoz>.sac {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
 /* !aection8 */
 
 .section8 {
     color: #fff;
-    margin-top: 50px;
+    margin-top: 170px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .topp {
-    width: 1050px;
+    width: 100%;
     height: 430px;
     border-radius: 20px;
     background-color: #3b3b3b;
     padding: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .images {
@@ -640,9 +719,12 @@ p {
     color: black;
 }
 
-.div100 p {
+.div100 input {
+    width: 180px;
     font-size: 16px;
     margin-left: 20px;
+    outline: none;
+    border: none;
 }
 
 .div100 button {
@@ -658,7 +740,7 @@ p {
 footer {
     margin-top: 40px;
     width: 100%;
-    height: 334px;
+    height: 355px;
     background-color: rgba(59, 59, 59, 1);
     display: flex;
     align-items: center;
@@ -666,7 +748,7 @@ footer {
 }
 
 .footer-box {
-    width: 94%;
+    width: 1050px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -730,6 +812,36 @@ footer .footer-right li {
     width: 250px;
 }
 
+
+.div1000 {
+    width: 425px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between;
+    color: black;
+    margin-bottom: 7px;
+}
+
+.div1000 input {
+    width: 180px;
+    font-size: 16px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+}
+
+.div1000 button{
+    width: 211px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: rgba(162, 89, 255, 1);
+    color: #fff;
+}
+
 .but .iiimg {
     width: 32px;
     height: 32px;
@@ -739,23 +851,46 @@ footer .footer-right li {
 
 .but {
     border: none;
+    display: flex;
     background-color: transparent;
 }
 
-.item {
+.its {
     display: flex;
     gap: 10px;
 }
 
+.border {
+    width: 1130px;
+    height: 1px;
+    background-color: #a1a1a1a1;
+}
+
+.ssca {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.rasm{
+    display: none;
+}
+
 @media screen and (max-width: 834px) {
 
-    .container {
-        width: 80%;
-        height: 100%;
-        padding: 20px;
-        margin: auto;
+    .wrapper {
+        display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
+    }
+
+    .item ul {
+        display: none;
+    }
+
+    .btn button {
+        display: none;
     }
 
     /* !sectio1 */
@@ -767,17 +902,9 @@ footer .footer-right li {
 
     .top h1 {
         width: 330px;
-        height: 138px;
+        height: 120px;
         font-size: 38px;
         color: #fff;
-    }
-
-    .item ul {
-        display: none;
-    }
-
-    .btn button {
-        display: none;
     }
 
     .top p {
@@ -785,9 +912,11 @@ footer .footer-right li {
         height: 66px;
         color: #fff;
         font-size: 16px;
+        margin-top: 0;
     }
 
     .number {
+        width: 330px;
         height: 57px;
     }
 
@@ -849,7 +978,13 @@ footer .footer-right li {
         display: none;
     }
 
+    .left {
+        width: 330px;
+        height: 381px;
+    }
+
     /* !sectio2 */
+
     .section2 {
         align-items: center;
         justify-content: center;
@@ -858,6 +993,11 @@ footer .footer-right li {
 
     .textga {
         color: #fff;
+    }
+
+    .rasmlar{
+        width: 330px;
+        height: 525px;
     }
 
     .textga h1 {
@@ -872,11 +1012,15 @@ footer .footer-right li {
         display: none;
     }
 
-    .rasmlar2 {
+    .rasmga2 {
         justify-content: space-between;
+        width: 100%;
+        height: 525px;
+        gap: 10px;
     }
 
     /* !sectio3 */
+
     .section3 {
         align-items: center;
         justify-content: center;
@@ -896,7 +1040,11 @@ footer .footer-right li {
     }
 
     .top-hammasi {
+        width: 100%;
+        height: 360px;
+        display: grid;
         grid-template-columns: auto auto;
+        grid-gap: 5px;
     }
 
     .divbek {
@@ -923,18 +1071,36 @@ footer .footer-right li {
         display: flex;
     }
 
-    .divbek p:nth-child(1) {
+    .divbek > p{
         font-size: 22px;
+        display: flex;
     }
 
-    .divbek p:nth-child(2) {
+    .divbek-child{
+        width: 210px;
+        height: 22px;
+        display: flex;
+        text-align: center;
+    }
+
+    .yovi{
+        text-align: left;
+    }
+
+    .total1{
+        color: #fff;
         font-size: 16px;
+    }
+
+    .total1 > .total{
+        color: #a1a1a1;
     }
 
     /* !sectio4 */
     .section4 {
         align-items: center;
         justify-content: center;
+        margin-top: 170px;
     }
 
     .h1-yozuv .eyh-1 {
@@ -948,6 +1114,7 @@ footer .footer-right li {
 
     .top-hamma {
         grid-template-columns: auto auto auto auto;
+        gap: 0;
     }
 
     .divhon {
@@ -1099,11 +1266,15 @@ footer .footer-right li {
         height: 160px;
     }
 
-    .divlarr p:nth-child(2) {
+    .divlar-yoz{
+        color: #fff;
+    }
+
+    .divlar-yoz .sas{
         font-size: 16px;
     }
 
-    .divlarr p:nth-child(1) {
+    .divlar-yoz .sac{
         font-size: 12px;
     }
 
@@ -1117,12 +1288,13 @@ footer .footer-right li {
     }
 
     .topp {
-        width: 690px;
+        width: 800px;
         height: 360px;
         border-radius: 20px;
         background-color: #3b3b3b;
         display: flex;
         align-items: center;
+        position: relative;
         justify-content: space-between;
         padding: 40px;
     }
@@ -1157,8 +1329,8 @@ footer .footer-right li {
     }
 
     .div100 {
-        width: 300px;
-        height: 26px;
+        width: 273px;
+        height: 46px;
         border-radius: 20px;
         background-color: #fff;
         display: flex;
@@ -1167,10 +1339,11 @@ footer .footer-right li {
         color: black;
     }
 
-    .div100 .yo {
-        width: 360px;
-        height: 46px;
-        font-size: 8px;
+    .div100 input {
+        width: 200px;
+        height: 22px;
+        font-size: 12px;
+        position: absolute;
         margin-left: 20px;
         color: black;
     }
@@ -1178,6 +1351,8 @@ footer .footer-right li {
     .div100 button {
         width: 300px;
         height: 46px;
+        top: 50px;
+        position: relative;
         border-radius: 20px;
         background-color: rgba(162, 89, 255, 1);
         color: #fff;
@@ -1188,7 +1363,7 @@ footer .footer-right li {
     footer {
         margin-top: 40px;
         width: 100%;
-        height: 703px;
+        height: 753px;
         background-color: rgba(59, 59, 59, 1);
         display: flex;
         align-items: center;
@@ -1226,13 +1401,30 @@ footer .footer-right li {
     }
 
     footer .footer-left {
-        width: 500px;
+        width: 690px;
     }
 
     footer .footer-right {
+        width: 690px;
+        height: 161px;
         display: grid;
         grid-template-columns: auto auto auto;
         grid-gap: 20px;
+        text-align: left;
+    }
+
+    .footer-right > .ul{
+        width: 690px;
+        height: 161px;
+    }
+
+    .footer-right > .ul:nth-child(1){
+        position: absolute;
+    }
+    
+    .footer-right > .ul:nth-child(2){
+        position: relative;
+        top: 180px;
     }
 
     .footer-right .ul li {
@@ -1273,28 +1465,41 @@ footer .footer-right li {
         background-color: transparent;
     }
 
-    .item {
+    .its {
         display: flex;
         gap: 10px;
     }
+
+    .border{
+        width: 690px;
+        height: 1px;
+        top: 270px;
+        position: relative;
+    }
+
+    .ssca{
+        right: 232px;
+        top: 260px;
+        position: relative;
+    }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) { 
 
-    .container {
-        width: 80%;
-        height: 100%;
-        padding: 20px;
-        margin: auto;
+    .wrapper{
+        width: 375px;
+        display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
 
     .section1 {
         align-items: center;
         justify-content: center;
-        display: grid;
-        grid-template: column;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
     }
 
     .top h1 {
@@ -1309,6 +1514,8 @@ footer .footer-right li {
         height: 66px;
         color: #fff;
         font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
 
     .item {
@@ -1389,12 +1596,15 @@ footer .footer-right li {
 
     .textga h1 {
         font-size: 28px;
-        margin-left: 50vh;
+        margin-left: 48vh;
     }
 
-    .textga p {
-        margin-left: 50vh;
+    .textga>p {
+        width: 315px;
+        height: 44px;
+        margin-left: 48vh;
         font-size: 16px;
+        text-align: start;
     }
 
     .rasmga2 .rasmlar:nth-child(3) {
@@ -1424,10 +1634,34 @@ footer .footer-right li {
     /* !section3 */
 
     .section3 {
-        display: grid;
+        width: 375px;
+        height: 895px;
+        display: flex;
+        margin-top: 0;
         align-items: center;
         justify-content: center;
-        grid-template: column;
+        flex-direction: column;
+        position: relative;
+        right: 15px;
+    }
+
+    .fasad{
+        width: 315px;
+        height: 100px;
+        margin-right: 60px;
+    }
+
+    .boshi{
+        width: 315px;
+        height: 93px;
+        text-align: start;
+        position: absolute;
+    }
+
+    .btn2{
+        position: relative;
+        top: 680px;
+        left: 3px;
     }
 
     .ddivbek {
@@ -1435,8 +1669,16 @@ footer .footer-right li {
     }
 
     .top-hammasi {
+        width: 315px;
+        height: 530px;
+        margin-right: 65px;
         display: grid;
         grid-template-columns: auto;
+    }
+
+    .btn2 {
+        width: 315px;
+        height: 60px;
     }
 
     /* !section4 */
@@ -1462,9 +1704,12 @@ footer .footer-right li {
 
     .section5 {
         display: grid;
+        grid-template: column;
         align-items: center;
         justify-content: center;
-        grid-template: column;
+        margin: 0 auto;
+        text-align: center;
+        flex: 1;
     }
 
     .toping {
@@ -1476,10 +1721,14 @@ footer .footer-right li {
         display: grid;
     }
 
+    .btn1 {
+        display: none;
+    }
+
     /* !section6 */
 
     .section6 {
-        display: grid;
+        display: flex;
         align-items: center;
         justify-content: center;
     }
@@ -1487,9 +1736,31 @@ footer .footer-right li {
     .img-ek {
         width: 375px;
         height: 590px;
-        display: grid;
-        margin-top: none;
-        grid-template-columns: auto;
+        position: relative;
+        right: 158px;
+        padding: 30px;
+    }
+
+    .leftt {
+        width: 315px;
+        height: 280px;
+        position: relative;
+        bottom: 130px;
+    }
+
+    .leftt .btn10 {
+        width: 315px;
+        height: 60px;
+        position: relative;
+        top: 180px;
+        font-weight: 600;
+    }
+
+    .div12 {
+        width: 300px;
+        margin-top: 0;
+        position: relative;
+        bottom: 200px;
     }
 
     .leri {
@@ -1524,6 +1795,17 @@ footer .footer-right li {
         height: 100px;
     }
 
+    .textga2 p {
+        font-size: 18px;
+        color: #a1a1a1;
+        letter-spacing: 1.2px;
+        margin-top: 10px;
+    }
+
+    .divlar-yoz {
+        text-align: start;
+    }
+
     /* !section8 */
 
     .section8 {
@@ -1531,28 +1813,98 @@ footer .footer-right li {
     }
 
     .topp {
-        width: 315px;
+        width: 380px;
         height: 565px;
         background-color: transparent;
         display: grid;
         grid-template-rows: auto;
     }
 
-    .riight>h1 {
+    .riight{
+        margin: 0;
+    }
+
+    .riight > h1 {
         width: 290px;
         height: 65px;
         font-size: 28px;
     }
 
-    .riight>.pac {
+    .riight >.pac {
         width: 315px;
         height: 44px;
         font-size: 16px;
     }
+    
+    .div100{
+        margin-top: 40px;
+    }
+
+    /* !footer */
 
     footer {
         width: 100%;
-        height: 776px;
+        height: 800px;
+    }
+
+    footer .footer-right {
+        width: 300px;
+    }
+
+    footer .footer-left {
+        width: 300px;
+    }
+
+    .footer-box .footer-right > .ul:nth-child(1){
+        width: 315px;
+    }
+
+    .footer-box .footer-right > .ul:nth-child(2){
+        width: 315px;
+    }
+
+    .div1000{
+        width: 315px;
+        height: 46px;
+    }
+    
+    .div1000 > input{
+        width: 275px;
+        height: 22px;
+        position: absolute;
+    }
+    
+    .div1000 > button{
+        width: 315px;
+        height: 46px;
+        position: relative;
+        top: 69px;
+    }
+
+    .border{
+        width: 370px;
+        position: relative;
+        top: 300px;
+    }
+    
+    .ssca{
+        width: 100%;
+        position: relative;
+        top: 300px;
+        left: 40px;
+    }
+
+    .ram{
+        width: 93px;
+        height: 32px;
+    }
+
+    .footer-left > .www{
+        width: 315px;
+        height: 44px;
+        font-size: 16px;
+        text-align: start;
+        display: flex;
     }
 
 }
